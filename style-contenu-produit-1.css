@@ -1,0 +1,53 @@
+body{
+  font-family: sans-serif;
+}
+
+/*chemin*/
+.chemin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 172px 0px 0px 97px;
+}
+
+/*chemin Accueil Icon */
+.changerCouleurIcon  {
+  
+  width: 15px;
+  height: 12px;
+  margin: 0px 20px 0px 0px;
+  background: url("images/icon\ _home_.png") no-repeat;
+  display: inline-block;   
+}
+
+.changerCouleurIcon:hover  {
+  background:url("images/icon\ _home_hover.png") no-repeat;  
+}
+
+
+  /*chemin text*/
+  .changerCouleurText  {
+    margin: 0px 0px 0px 20px;
+    display: inline-block;
+    color: #707173;   
+  }
+  
+  .changerCouleurText:hover  {
+    color:#944848; 
+  }
+
+
+  /*recherche text*/
+  .changerCouleurTextRecherche {
+  
+    width: 19px;
+    height: 18px;
+    margin: 0px 20px 0px 0px;
+    background: url("images/icon_recherche.png") no-repeat;
+    display: inline-block;   
+  }
+  
+  .changerCouleurTextRecherche:hover  {
+    background: url("images/icon_recherche_hover.png") no-repeat;
+  }
+ 
