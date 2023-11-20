@@ -1,0 +1,29 @@
+
+/* debut flexbo banniere inferieur  */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+
+.paragraphes {
+    display: flex;
+}
+
+.paragraphes p {
+    flex: 1;
+    background-color: #eadcd1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+}
+.paragraphes-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff; /* Fond blanc pour les encadrés */
+    padding: 20px;
+    border: 1px solid #ddd; /* Bordure pour les encadrés */
+}
+/* fin flexbo banniere inferieur  */
