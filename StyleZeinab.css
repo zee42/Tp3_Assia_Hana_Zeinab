@@ -1,4 +1,4 @@
-
+/*bannière*/
 .bannière {
     display: flex;
     justify-content: flex-start;
@@ -6,7 +6,8 @@
 
 }
 
-/* boutons de la bannière*/
+
+/*bouton de la bannière*/
 .bouton{
     display: flex;
     justify-content: center;
@@ -19,5 +20,18 @@
     border-radius: 20px;
     background-color: #E4DCD1;
     color: #85817D;
-
 }
+
+
+/*couleur de fond*/
+body{
+    background-color: #d6cec3;
+}
+
+/* emplacement page de présentation*/
+.pageprésentation{
+border: #944848;
+ flex-direction: row;
+ justify-self: left;
+}
+
