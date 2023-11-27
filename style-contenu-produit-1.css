@@ -7,47 +7,999 @@ body{
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 15px;
   margin: 172px 0px 0px 97px;
 }
+ 
+  /*chemin Accueil Icon */
+.maison{
+  fill: black;
+  width:15px; 
+  height:12px;
+  position:absolute;  
 
-/*chemin Accueil Icon */
-.changerCouleurIcon  {
-  
-  width: 15px;
-  height: 12px;
-  margin: 0px 20px 0px 0px;
-  background: url("images/icon\ _home_.png") no-repeat;
-  display: inline-block;   
 }
-
-.changerCouleurIcon:hover  {
-  background:url("images/icon\ _home_hover.png") no-repeat;  
+.maison:hover path  {
+  fill:#944848;
 }
-
+.flecheDroit{
+  fill:#944848;
+  width:7px; 
+  height:14px;
+  position:absolute;  
+  margin: 0px 0px 0px 30px; 
+}
 
   /*chemin text*/
-  .changerCouleurText  {
-    margin: 0px 0px 0px 20px;
-    display: inline-block;
-    color: #707173;   
-  }
+.changerCouleurText  {
   
-  .changerCouleurText:hover  {
-    color:#944848; 
-  }
+  display: inline-block;
+  color: #707173; 
+  size: 14px;  
+  position:absolute;  
+  margin: 0px 0px 0px 50px;
+  font-size: 14px;
 
 
-  /*recherche text*/
-  .changerCouleurTextRecherche {
+}
+.changerCouleurText:hover  {
+  color:#944848; 
+}
   
+ 
+  /* Rectangle recherche */
+
+  /*recherche */
+  .rectangeleRecherche{
+    position:relative;  
+    width: 233px;
+    height: 30px;
+    margin: 20px 0px 0px 550px;
+  }
+#rechercher {
+  width: 233px;
+  height: 30px;
+  border: 1px solid #707173;
+  outline: none;
+  z-index: 0;
+  padding: 0;
+  margin: 0px 0px 0px 0px;
+  position:absolute;
+  background-color: transparent;
+}
+.rectangeleRecherche:hover #rechercher{
+  border: 1px solid #944848;
+  position:absolute;
+  
+}
+.rectangeleRecherche #rechercher:focus{
+  border: 1px solid #944848;
+  
+}
+/*icon loop rechercher*/
+.iconRechercher{
+  fill: #707173;
+  width:19px; 
+  height:18px;
+  margin: 0px 0px -10px 208px;
+  z-index:1;
+  
+}
+
+.rectangeleRecherche:hover .iconRechercher {
+  fill: #944848;
+  width:19px; 
+  height:18px;
+}
+.rectangeleRecherche:focus .iconRechercher{
+  fill: #944848;
+  width:19px; 
+  height:18px;
+}
+
+
+  .changerCouleurIconRecherche { 
     width: 19px;
     height: 18px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 110px;
     background: url("images/icon_recherche.png") no-repeat;
     display: inline-block;   
   }
   
-  .changerCouleurTextRecherche:hover  {
+  .changerCouleurIconRecherche:hover  { 
     background: url("images/icon_recherche_hover.png") no-repeat;
   }
+   
+
+
+.RectangeleRechercheEtIcon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: -12px 0px 0px 0px; /* text rechercher et icon loop sont au milieu de rectangle*/
+}
+/*menu droit*/
+.menuDroit{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap:90px;
+
+}
+/*--coeur--*/
+.coeur:hover{
+  background: url("images/Vector.svg") no-repeat;
+  display: inline-block;   
+}
+.loop{
+  margin: 0px 0px 0px 110px;
+}
+.coeur{
+  fill: #707173;
+  width:19px; 
+  height:17px; 
+
+}
+.menuCoeur:hover .coeur path  {
+  fill:#944848;
+}
+.nombre1{
+  fill: #944848;
+  width:15px; 
+  height:13px;
+  margin: -7px 0px 0px 18px;
+  position:absolute;  
+}
+/*text*/
+.textCouleur{
+  color:#707173; 
+  margin: 20px 0px 0px 0px;
+  font-size: 14px;
+  position:absolute; 
+
+
+}  
+
+
+.menuCoeur:hover .textCouleur{
+  color:#944848;
+  font-size: 14px;
+}
+
+.menuCoeur{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+/* ---Icon se connecter---- */
+
+.profil{
+  fill: #707173;
+  width:25px; 
+  height:22px; 
+  margin: -5px 0px 0px 0px;
+}
+.menuProfil:hover .profil path  {
+  fill:#944848;
+}
+/*text se connecter*/
+
+.menuProfil:hover .textCouleur{
+  margin: 20px 0px 0px 0px;
+  color:#944848; 
+  size: 14px;
+}
+/*ensemble profil*/
+.menuProfil{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+}
+/*---Icon panier---*/  
+
+.panier{
+  fill: #707173;
+  stroke:#707173;
+  width:24px; 
+  height:17px; 
+  margin: 0px 0px 0px 0px;
+}
+.menuPanier .patLine   {
+   stroke-width:2.87;
+  stroke-miterlimit:10; 
+}
+.menuPanier .patRempli   {
+  fill: #707173;
+  stroke:#707173;
+}
+
+.menuPanier:hover .panier path  {
+  fill:#944848;
+  stroke:#944848;
+  
+}
+
+/*text panier*/
+
+.menuPanier:hover .textCouleur{
+  margin: 20px 0px 0px 0px;
+  color:#944848; 
+  font-size: 14px;
+}
+/*ensemble panier */
+.menuPanier{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin: 0px 0px 0px -15px;
+}
+
+/*section filtre */
+/*ensemble filtre */
+.flexBoxFilter{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 15px;
+  margin: 10px 0px 0px 103px;
+  border-top: 1px solid #707173;
+  border-bottom: 1px solid #707173;
+  padding: 10px;
+  position:absolute;  
+
+
+}
+
+/*ensemble filtre Trier */
+.flexBoxTrier{
+
+  margin: 0px 0px 0px 900px;
+  
+}
+
+/* icon filtre*/
+.iconFiltre{
+  width: 22px; 
+  height:20px;  
+  fill:none;
+  stroke-width:1.33px; 
+  stroke-linecap:round; 
+  stroke-linejoin:round;
+  stroke:#944848;
+  position:absolute;  
+  margin: 0px 0px 0px 0px;
+  
+}
+
+/* text filtre*/
+.textFiltre{
+  font-weight:800;
+  color:#944848; 
+  margin: 0px 0px 0px 35px;
+  font-size: 15px;
+  position: relative;
+}
+
+/* icon fleche filtre */
+.flecheGauche{
+  rotate: 180deg;
+  fill:#944848;
+  width:7px; 
+  height:14px;
+  position:absolute;  
+
+  margin: 0px 0px 0px 105px;
+   
+
+}
+/*option de filtrer */ 
+/*Text*/
+.trier{
+  color: #707173;
+  margin: -9px 0px 0px -60px;
+  font-size:15px ;
+  position:absolute;  
+
+
+}
+
+/*choix filtre*/
+.bloc_select select{
+  border: none;
+  width: 150px;
+  color:#707173;
+  font-weight:900;
+  background-color:transparent;
+  margin: 0px 0px 0px -5px;
+  font-size: 15px;
+
+}
+.bloc_select select:hover{
+  color:#944848;
+}
+
+
+/*ensemble selection de produit*/
+
+.ensembl-selection-de-produit{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0px;
+  margin: 70px 725px 0px 0px;
+  padding: 0px;
+  position:absolute;  
+
+}
+
+
+
+
+/*group select et ligne en bas*/
+.bloc_select_couleur {
+  position: relative;
+  border-bottom: 1px solid #707173;
+  width: 250px;
+  margin: 0px 100px 0px 95px;
+}
+/*position des selects*/
+.bloc_select_couleur select{
+  border:none;
+  width: 235px;
+  height: 40px; 
+  color:#707173;
+  font-weight:900;
+  background-color:transparent;
+  margin: 0px 0px 0px 10px;
+  font-size: 15px;
+  appearance: none;
+}
+/*test*/
+/*
+.bloc_select_couleur .test{
+  color: aquamarine;
+
+}
+
+.bloc_select_couleur select:hover .test {
+  color: #707173;
+  
+}
+*/
+
+.bloc_select_couleur select:hover{ 
+  color:#944848;
+}
+
+/*icon fleche position */
+.fleche-modifier{
+  position: absolute;
+  margin: -30px 0px 0px 225px;
+  display: block;
+  background-image: url("images/icon SVG/direction-droit.svg");
+  background-repeat: no-repeat;
+  rotate: 90deg;
+  /*background: yellowgreen;*/
+  height: 1rem;
+  width: 1rem;
+  pointer-events: none; /*button visual mais pas physique donc il ne block pas le click de button*/
+  
+}
+/*icon fleche intereaction */
+/*
+.fleche-modifier::before,
+.fleche-modifier::after{
+  --size:1em;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.fleche-modifier::before{
+  border-left: var(--size) solid transparent ;
+  border-right: var(--size) solid transparent;
+  border-bottom:var(--size)  solid red ;
+}
+.fleche-modifier::after{
+  border-left: var(--size) solid transparent ;
+  border-right: var(--size) solid transparent;
+  border-top:var(--size)  solid red ;
+}
+*/
+
+
+/*group select et ligne en bas*/
+.bloc_select_ouvert {
+  position: relative;
+  /* border-bottom: 1px solid #707173; */
+  width: 250px;
+  margin: 0px 100px -25px 95px;
  
+}
+/*position des selects*/
+.bloc_select_ouvert p{
+  width: 235px;
+  height: 35px; 
+  color:#707173;
+  font-weight:bold;
+  background-color:transparent;
+  margin: 0px 0px 0px 10px;
+  font-size: 15px;
+  appearance: none;
+}
+
+
+.bloc_select_ouvert p:hover{ 
+  color:#944848; 
+}
+
+/* fleche vers haut */
+.fleche-modifier-ouvert{
+  position: absolute;
+  margin: -40px 0px 0px 227px;
+  display: block;
+  background-image: url("images/icon SVG/direction-droit.svg");
+  background-repeat: no-repeat;
+  rotate: -90deg;
+  /*background: yellowgreen;*/
+  height: 1rem;
+  width: 1rem;
+  pointer-events: none; /*button visual mais pas physique donc il ne block pas le click de button*/
+ 
+}
+/*check box*/
+/*text*/
+.bloc_Rectangle_choix label{
+ font-size: 14px;
+ color:#707173;
+ margin: 0px 10px 0px 17px ;
+ 
+}
+/*text pour Disponibilité*/
+.text-espace1{
+  margin: 0px 0px 0px 110px ;
+ }
+
+.text-espace2{
+  margin: 0px 0px 0px 50px ;
+ }
+
+
+/*box 1 en haut*/
+/*check box*/
+/*text*/
+.bloc_Rectangle_choix_1 label{
+  font-size: 14px;
+  color:#707173;
+  margin: 0px 10px 0px 17px ; 
+ }
+ 
+.bloc_Rectangle_choix_1 .box1{
+  width: 20.25px;
+  height: 18px;
+  border-radius: 15%;
+  border: 1px solid #707173; 
+  appearance: none;
+  cursor: pointer;
+  margin: 10px 0px -5px -110px ;
+ }
+
+ .bloc_Rectangle_choix_1 .box1:hover{
+  
+  background-image: url("images/icon SVG/icon _coche_marque.svg");
+  background-repeat: no-repeat;
+  background-position: 1.5px ;
+ }
+
+ .bloc_Rectangle_choix_1 .box1:checked{
+  border: none; 
+  background-image: url("images/icon SVG/icon _coche_marque_active.svg");
+  background-repeat: no-repeat;
+  background-position: -1.5px ;
+ }
+
+/*box 2 en bas*/
+.bloc_Rectangle_choix .box2{
+  width: 20.25px;
+  height: 18px;
+  border-radius: 15%;
+  border: 1px solid #707173; 
+  appearance: none;
+  cursor: pointer;
+  margin: 10px 0px -5px 0px;
+ }
+
+ .bloc_Rectangle_choix .box2:hover{
+  
+  background-image: url("images/icon SVG/icon _coche_marque.svg");
+  background-repeat: no-repeat;
+  background-position: 1.5px;
+ }
+
+ .bloc_Rectangle_choix .box2:checked{
+  border:none; 
+  background-image: url("images/icon SVG/icon _coche_marque_active.svg");
+  background-repeat: no-repeat;
+  background-position: -1.5px;
+ }
+
+
+ /*prix_Range*/
+ .prix_Range label{
+  font-size: 14px;
+  color:#707173;
+  margin: 0px 0px 0px 0px ;
+  
+
+ }
+ .prix_Range input{
+
+  width: 240px;
+  fill: #944848;
+  margin: 10px 0px -5px 0px ;
+
+ }
+ /** Fire fox*/
+ .prix_Range input::-moz-range-progress{
+  background-color:#944848;
+ }
+ .prix_Range input::-moz-range-track{
+  background-color:#707173;
+ }
+ 
+ /*indications de selection*/
+/* ensemble d'indication de selection */
+ .ensemble-indication-selection{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  gap: 5px;
+  margin: 80px 0px 0px 425px;
+  padding: 0px;
+  position: relative;
+
+ }
+ /*text*/
+ .en-stock p{
+  font-size: 14px;
+  color:#707173;
+  margin: 5px 0px 0px 7px;
+  position:absolute;
+ }
+ .en-stock:hover p{
+  color:#944848;
+ }
+/*rectangle*/
+.en-stock{
+  background-color:#EFEFEF;
+  width: 92.76px;
+  height: 24px;
+  position:absolute;
+}
+/*icon X */
+.en-stock .iconX{
+  width:13px; 
+  height:11px;
+  fill:#707173;
+  margin: 7px 0px 0px 73px;
+  position:absolute;
+}
+
+.en-stock:hover .iconX{
+  fill:#944848;
+}
+/*text*/
+
+.effacer p{
+  text-decoration: underline;
+  font-size: 14px;
+  color:#944848;
+  margin: -7px 0px 0px 104px;
+  position:absolute;
+}
+.effacer:hover p{
+  color:#BE6666;
+}
+
+/*produit disponible afficher*/
+/* ensemble de produits afficher */
+.ensemble-produit{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0px;
+  margin: 65px 0px 0px 500px;
+  padding: 0px;
+  position:absolute ;
+}
+
+/*message*/
+/*rectangle*/
+.message-nbStock{
+  width:81px; 
+  height:24px;
+  background-color: black;
+  font-size: 12px;
+  margin: -360px 130px 0px 0px;
+  text-align: center;
+}
+/*text*/
+.message-nbStock p{
+  color: #ffffff;
+  margin: 5px 0px 0px 0px;
+  font-weight: bold;
+}
+
+/*icon etoile*/
+.etoile{
+  width:83px ;
+  height:15px;
+  background-image:url("images/icon SVG/etoile.svg");
+  margin:340px 140px 0px 0px;
+}
+/*description*/
+.description{
+  width: 226px;
+  height: 32px;
+  margin: -10px 0px 0px 5px;
+  color:#707173;
+  font-size:14px;
+}
+/*prix*/
+.prix{
+  width: 63px;
+  height: 27px;
+  margin: -5px 160px 0px 0px;
+  color:#707173;
+  font-size:20px;
+  font-weight: 600;
+}
+
+/*Ajouter au panier*/
+/*rectangle*/
+.ajouter-au-panier{
+  width:231.23px; 
+  height:27.55px;
+  border-radius: 6px;
+  background-color:#A08C74;
+  font-size: 12px;
+  margin: 20px 0px 0px 0px;
+  text-align: center;
+}
+.ajouter-au-panier:hover{
+  background-color:#CCB496;
+}
+/*text*/
+.ajouter-au-panier p{
+  color: #ffffff;
+  font-size: 14px;
+  margin: 5px 0px 0px 0px;
+  font-weight: 500;
+}
+/*icon coeur*/
+
+.coeur2{
+  width:20px; 
+  height:20px;
+  fill:#707173; 
+  margin: 375px 0px 0px 200px;
+  position:absolute;
+  cursor: pointer;
+
+}
+.coeur2:hover{
+  fill:#944848;
+}
+.coeur2:active{
+  background-image:url("images/icon SVG/icon_coeur_rouge.svg");
+  background-repeat:no-repeat;
+  z-index: 0;
+  fill:transparent; 
+
+
+}
+/*
+.icon-coeur:hover{
+  fill:#944848; 
+  background-image:url("images/icon SVG/icon_coeur_orange.svg");
+  background-repeat:no-repeat;
+  z-index: 0;
+  width:20px; 
+  height:20px;
+  margin: 374px 0px 0px 200px;
+  position: absolute; 
+}
+*/
+/*produit2 Hijab disponible afficher*/
+
+.ensemble-produit2-Hijab{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0px;
+  margin: 65px 0px 0px 800px;
+  padding: 0px;
+  position:absolute ;
+
+
+}
+
+
+/*message*/
+/*rectangle*/
+.message-economisez{
+  width:115px; 
+  height:24px;
+  background-color: #C20000;
+  font-size: 12px;
+  margin: -360px 95px 0px 0px;
+  text-align: center;
+}
+/*text*/
+.message-economisez p{
+  color: #ffffff;
+  margin: 5px 0px 0px 0px;
+  font-weight:bold;
+}
+
+/*prix rabais*/
+.prix-rabais{
+  width: 63px;
+  height: 27px;
+  margin: -5px 160px 0px 0px;
+  color:#C20000;
+  font-size:20px;
+  font-weight: 600;
+}
+/*prix ancien*/
+.prix-ancien{
+  width: 63px;
+  height: 27px;
+  margin: -18px 25px -8px 0px;
+  color:#707173;
+  text-decoration: line-through;
+  font-size:14px;
+  font-weight: 600;
+}
+
+
+/*produit3 abaya*/
+
+.ensemble-produit3-abaya{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 0px;
+  margin: 65px 0px 0px 1100px;
+  padding: 0px;
+  position:absolute ;
+
+}
+
+/*message*/
+/*rectangle*/
+.message-nouveau{
+  width:81px; 
+  height:24px;
+  background-color: #C20000;
+  font-size: 12px;
+  margin: -360px 130px 0px 0px;
+  text-align: center;
+}
+/*text*/
+.message-nouveau p{
+  color: #ffffff;
+  margin: 5px 0px 0px 0px;
+  font-weight: bold;
+}
+
+/*navigation 1 2 3*/
+
+/*icon fleche*/
+.flecheGauche-navigation-gauche{
+  fill:#944848;
+  width:7px; 
+  height:14px;
+  position:absolute;  
+  margin: 647px 0px 0px 480px ; 
+  rotate: 180deg;
+}
+
+.page-precedent p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #707173;
+  margin: 647px 0px 0px 500px ;
+  position:absolute;  
+
+}
+.page-precedent p:hover{
+  color: #944848;
+}
+/*icon fleche*/
+.flecheDroit-navigation-droit{
+  fill:#944848;
+  width:7px; 
+  height:14px;
+  position:absolute;  
+  margin: 647px 0px 0px 1290px ; 
+  rotate: 90;
+}
+
+.page-suivant p{
+  font-size: 14px;
+  font-weight: bold;
+  color: #707173;
+  margin: 647px 0px 0px 1225px ;
+  position:absolute;  
+}
+.page-suivant p:hover{
+  color: #944848;
+}
+
+/*navigation 1*/
+.navigation1{
+width: 26px;
+height: 28px;
+background-color:#F4F1F0 ;
+border-radius:8px ;
+font-size: 14px;
+margin: 647px 130px 0px 790px;
+text-align: center;
+position: absolute;
+}
+.navigation1 p{
+  color: #707173;
+  margin: 5px 0px 0px 0px;
+  font-weight: bold;
+}
+
+.navigation1:hover{
+  background-color:#944848 ;
+  }
+.navigation1 p:hover{
+ color:#ffffff ;
+}
+
+/*navigation 2*/
+.navigation2{
+  width: 26px;
+  height: 28px;
+  background-color:#944848;
+  border-radius:8px ;
+  font-size: 14px;
+  margin: 647px 130px 0px 820px;
+  text-align: center;
+  position: absolute;
+  }
+  .navigation2 p{
+    color: #ffffff;
+    margin: 5px 0px 0px 0px;
+    font-weight: bold;
+  }
+
+
+
+
+/*navigation 3*/
+.navigation3{
+  width: 26px;
+  height: 28px;
+  background-color:#F4F1F0 ;
+  border-radius:8px ;
+  font-size: 14px;
+  margin: 647px 130px 0px 850px;
+  text-align: center;
+  position: absolute;
+  }
+  .navigation3 p{
+    color: #707173;
+    margin: 5px 0px 0px 0px;
+    font-weight: bold;
+  }
+  
+  .navigation3:hover{
+    background-color:#944848 ;
+    }
+  .navigation3 p:hover{
+   color:#ffffff ;
+  }
+
+
+  /*page 2*/
+  /*grande image*/
+.grand-affichage-produit-Hijab{
+
+  position: absolute;
+  margin: 40px 0px 0px 207px;
+}
+/*petite image */
+.petit-images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0px 0px 80px;
+  position: absolute;
+}
+/*--nouveau chemin--*/
+  /*chemin text*/
+  .changerCouleurText-Hijab  {
+  
+    display: inline-block;
+    color: #707173; 
+    size: 14px;  
+    position:absolute;  
+    margin: 0px 0px 0px 125px;
+    font-size: 14px;
+  }
+  .changerCouleurText-Hijab:hover  {
+    color:#944848; 
+  }
+
+  /*icon fleche*/
+  .flecheDroit-Hijab{
+    fill:#944848;
+    width:7px; 
+    height:14px;
+    position:absolute;  
+    margin: 0px 0px 0px 110px; 
+  }
+
+  .icon-loop{
+    width:42px;
+    height:43px;
+    fill:none;
+  }
+  .icon-loop-path1{
+    stroke:#393333; 
+    stroke-width:3px ;
+    stroke-linecap:round; 
+    stroke-linejoin:round;
+  }
+
+  .icon-loop-rectangle{
+    width: 50px;
+    height: 49px;
+    background-color:rgba(217 217 217 / 43%);
+    position: absolute;
+    margin: 40px 0px 0px 560px;
+  }
+  .icon-loop-rectangle:hover{
+    background-color:rgba(240 240 240 / 79%);
+  }
+
+  /*Loop button*/
+.button-fleche{
+  width:12px;
+  height:17px;
+  fill:#393333;
+  margin: 7px 0px 0px 5px;
+}
+/*rectangle*/
+.icon-loop-rectangle-fleche{
+  width: 23.35px;
+  height: 32.59px;
+  background-color:rgba(217 217 217 / 43%);
+  position: absolute;
+  margin: 330px 0px 0px 207px;
+}
+.icon-loop-rectangle-fleche:hover{
+  background-color:rgba(240 240 240 / 79%);
+}
+
+/*button fleche droite*/
+/*rectangle*/
+.icon-loop-rectangle-fleche-droite{
+  width: 23.35px;
+  height: 32.59px;
+  background-color:rgba(217 217 217 / 43%);
+  position: absolute;
+  margin: 330px 0px 0px 586px;
+  rotate: 180deg;
+}
+.icon-loop-rectangle-fleche-droite:hover{
+  background-color:rgba(240 240 240 / 79%);
+}
