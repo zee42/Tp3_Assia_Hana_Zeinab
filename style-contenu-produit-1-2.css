@@ -132,7 +132,7 @@ body{
   width: 19px;
   height: 18px;
   margin: 0px 0px 0px 110px;
-  background: url("images/icon_recherche.png") no-repeat;
+  background-image: url("images/icon_recherche.png" )  no-repeat;
   display: inline-block;   
 }
 
@@ -404,7 +404,7 @@ body{
   position: absolute;
   margin: -30px 0px 0px 225px;
   display: block;
-  background-image: url("images/icon SVG/direction-droit.svg");
+  background-image: url("images/icon_svg/direction_droit.svg") ;
   background-repeat: no-repeat;
   rotate: 90deg;
   height: 1rem;
@@ -440,7 +440,7 @@ body{
   position: absolute;
   margin: -40px 0px 0px 227px;
   display: block;
-  background-image: url("images/icon SVG/direction-droit.svg");
+  background-image: url("images/icon_svg/direction_droit.svg")  ;
   background-repeat: no-repeat;
   rotate: -90deg;
   /*background: yellowgreen;*/
@@ -486,14 +486,14 @@ body{
 }
 
 .bloc_Rectangle_choix_1 .box1:hover {
-  background-image: url("images/icon SVG/icon _coche_marque.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque.svg") ;
   background-repeat: no-repeat;
   background-position: 1.5px ;
 }
 
 .bloc_Rectangle_choix_1 .box1:checked{
   border: none; 
-  background-image: url("images/icon SVG/icon _coche_marque_active.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque_active.svg" );
   background-repeat: no-repeat;
   background-position: -1.5px ;
 }
@@ -510,14 +510,14 @@ body{
 }
 
 .bloc_Rectangle_choix .box2:hover {
-  background-image: url("images/icon SVG/icon _coche_marque.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque.svg");
   background-repeat: no-repeat;
   background-position: 1.5px;
 }
 
 .bloc_Rectangle_choix .box2:checked {
   border:none; 
-  background-image: url("images/icon SVG/icon _coche_marque_active.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque_active.svg");
   background-repeat: no-repeat;
   background-position: -1.5px;
 }
@@ -542,13 +542,13 @@ body{
   cursor: pointer;
   margin: 10px 0px -5px 0px;
   border:none; 
-  background-image: url("images/icon SVG/icon _coche_marque_active.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque_active.svg");
   background-repeat: no-repeat;
   background-position: -1.5px;
 }
 
 .bloc_Rectangle_choix .box2stock:hover {
-  background-image: url("images/icon SVG/icon _coche_marque.svg");
+  background-image: url("images/icon_svg/icon_cochet_marque.svg");
   background-repeat: no-repeat;
   background-position: 1.5px;
 }
@@ -593,6 +593,66 @@ body{
     padding: 0px;
     position: absolute;
   }
+  /*icon coeur normal pour produits 2 Hijab*/
+/*check box*/
+
+.ensemble-produit2-Hijab .bloc_Rectangle_coeur2 .coeur {
+  margin: -106px 0px 0px 89px;
+  position: absolute;
+  width: 22px;
+  height: 24px;
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url("images/icon_svg/icon_coeur.svg");
+  background-size: 22px 22px;
+}
+
+.ensemble-produit2-Hijab .bloc_Rectangle_coeur2 .coeur:hover {
+  background-image: url("images/icon_svg/icon_coeur_activer.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.ensemble-produit2-Hijab .bloc_Rectangle_coeur2 .coeur:checked{
+  border: none; 
+  background-image: url("images/icon_svg/icon_coeur_rouge.svg");
+  background-repeat: no-repeat;
+  
+}
+
+/*icon coeur active*/
+/*check box*/
+
+.bloc_Rectangle_coeur2Active .coeur {
+  appearance: none;
+  border: none; 
+  background-image: url("images/icon_svg/icon_coeur_rouge.svg");
+  background-repeat: no-repeat;
+  background-size: 21px;
+  margin: -104px 0px 0px 89px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+
+.bloc_Rectangle_coeur2Active .coeur:checked{
+  background-repeat: no-repeat;
+  background-image: url("images/icon_svg/icon_coeur.svg");
+  appearance: none;
+  margin: -104px 0px 0px 89px;
+  position: absolute;
+}
+
+.bloc_Rectangle_coeur2Active .coeur:hover {
+  background-image: url("images/icon_svg/icon_coeur_activer.svg");
+  background-repeat: no-repeat;
+  /*margin: 375px 0px 0px 200px;*/
+  position: absolute;
+}
+
   
 }
 
@@ -699,7 +759,7 @@ fill:#944848;
 .etoile {
   width:83px ;
   height:15px;
-  background-image:url("images/icon SVG/etoile.svg");
+  background-image:url("images/icon_svg/etoile.svg");
   margin:340px 140px 0px 0px;
 }
 
@@ -753,7 +813,7 @@ fill:#944848;
 .bloc_Rectangle_coeur2Active .coeur {
   appearance: none;
   border: none; 
-  background-image: url("images/icon SVG/icon_coeur_rouge.svg");
+  background-image: url("images/icon_svg/icon_coeur_rouge.svg");
   background-repeat: no-repeat;
   background-size: 21px;
   margin: -104px 0px 0px 89px;
@@ -766,14 +826,14 @@ fill:#944848;
 
 .bloc_Rectangle_coeur2Active .coeur:checked{
   background-repeat: no-repeat;
-  background-image: url("images/icon SVG/icon_coeur.svg");
+  background-image: url("images/icon_svg/icon_coeur.svg");
   appearance: none;
   margin: -104px 0px 0px 89px;
   position: absolute;
 }
 
 .bloc_Rectangle_coeur2Active .coeur:hover {
-  background-image: url("images/icon SVG/icon_coeur_activer.svg");
+  background-image: url("images/icon_svg/icon_coeur_activer.svg");
   background-repeat: no-repeat;
   /*margin: 375px 0px 0px 200px;*/
   position: absolute;
@@ -790,12 +850,12 @@ fill:#944848;
   appearance: none;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-image: url("images/icon SVG/icon_coeur.svg");
+  background-image: url("images/icon_svg/icon_coeur.svg");
   background-size: 21px;
 }
 
 .bloc_Rectangle_coeur2 .coeur:hover {
-  background-image: url("images/icon SVG/icon_coeur_activer.svg");
+  background-image: url("images/icon_svg/icon_coeur_activer.svg");
   background-repeat: no-repeat;
   /*margin: 375px 0px 0px 200px;*/
   position: absolute;
@@ -803,7 +863,7 @@ fill:#944848;
 
 .bloc_Rectangle_coeur2 .coeur:checked{
   border: none; 
-  background-image: url("images/icon SVG/icon_coeur_rouge.svg");
+  background-image: url("images/icon_svg/icon_coeur_rouge.svg");
   background-repeat: no-repeat;
   
 }
@@ -1189,7 +1249,7 @@ footer{
   position: absolute;
   margin: 25px 0px 0px 485px;
   display: block;
-  background-image: url("images/icon SVG/direction-droit.svg");
+  background-image: url("images/icon_svg/direction_droit.svg");
   background-repeat: no-repeat;
   rotate: 90deg;
   /*background: yellowgreen;*/
@@ -1336,12 +1396,12 @@ footer{
   appearance: none;
   cursor: pointer;
   background-repeat: no-repeat;
-  background-image: url("images/icon SVG/icon_coeur.svg");
+  background-image: url("images/icon_svg/icon_coeur.svg");
   background-size: 27px;
 }
 
 .bloc_Rectangle_coeurGrand .coeur:hover {
-  background-image: url("images/icon SVG/icon_coeur_activer.svg");
+  background-image: url("images/icon_svg/icon_coeur_activer.svg");
   background-repeat: no-repeat;
   /*margin: 375px 0px 0px 200px;*/
   position: absolute;
@@ -1349,7 +1409,7 @@ footer{
 
 .bloc_Rectangle_coeurGrand .coeur:checked{
   border: none; 
-  background-image: url("images/icon SVG/icon_coeur_rouge.svg");
+  background-image: url("images/icon_svg/icon_coeur_rouge.svg");
   background-repeat: no-repeat;
   background-size: 27px;
   
@@ -1378,7 +1438,7 @@ footer{
 .etoileGrand {
   width:127px ;
   height:23px;
-  background-image:url("images/icon SVG/etoile.svg");
+  background-image:url("images/icon_svg/etoile.svg");
   background-size:127px 23px;
   background-repeat:no-repeat;
   margin:43px 0px 0px 5px;
@@ -1457,7 +1517,7 @@ footer{
   position: absolute;
   margin: -25px 0px 0px 505px;
   display: block;
-  background-image: url("images/icon SVG/direction-droit.svg");
+  background-image: url("images/icon_svg/direction_droit.svg");
   background-repeat: no-repeat;
   rotate: 90deg;
   height: 1rem;
@@ -1548,7 +1608,7 @@ footer{
 }
 
 .bloc_select_couleur_produit {
-  background-image: url("images/icon SVG/icon_rose_clair.svg");
+  background-image: url("images/icon_svg/icon_rose_clair.svg");
   background-repeat: no-repeat;
   background-position: 2.0px ;
   background-position-x: 8px; 
