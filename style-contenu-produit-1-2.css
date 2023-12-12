@@ -958,6 +958,14 @@ fill:#944848;
   text-align: center;
 }
 
+/*icon etoile*/
+.etoile-4Rempli-1Vide {
+  width:83px ;
+  height:15px;
+  background-image:url("images/icon_svg/etoile_4rempli_1vide.svg");
+  margin:340px 140px 0px 0px;
+}
+
 /*text*/
 .message-nouveau p {
   color: #ffffff;
