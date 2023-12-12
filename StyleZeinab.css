@@ -6,6 +6,27 @@
 
 }
 
+/*alignement des éléments*/
+.alignement{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    column-gap: 4px;
+
+}
+
+/*contenant de l'image de présentation*/
+.image-container{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*Style du texte sur la droite de la photo*/
+.textedroite{
+    align-items: center;
+    font-size: 24px;
+    color: #6B6459;
+}
+ 
 
 /*bouton de la bannière*/
 .bouton{
@@ -23,9 +44,41 @@
 }
 
 
+/*bouton de magasinage*/
+.bouton_magasinage{ 
+    margin-left: 200px;
+    margin-top: 90px;
+    margin-bottom: 250px;
+    justify-items: center;
+    font-size: 50px;
+    width: 300px;
+    height: 60px ;
+    border: solid 15px #9D8E76;
+    border-radius: 20px;
+    color: #e4dcd1;
+    background-color: #9D8E76;
+}
+
+/*met le titre/nom de la boutique au milieu*/
+.milieu-titre{
+    margin-left: 200px;
+}
+
+/*ajustement de la place des icônes*/
+.icone{
+    margin-left:600px;
+}
+
+/*style et ajustement du texte informatif en bas de la page index*/
+.contact-info{
+    margin-top: 10px;
+    font-size: 16px;
+    color:#6B6459
+}
+
 /*couleur de fond*/
 body{
-    background-color: #d6cec3;
+    background-color: #e4dcd1;
 }
 
 /* emplacement page de présentation*/
@@ -35,3 +88,23 @@ border: #944848;
  justify-self: left;
 }
 
+/* pour le texte du formulaire*/ 
+.texte_formulaire{
+    font-size: 30px;
+    color: #615F5D;
+    background-color: rgb(255, 255, 255);
+}
+
+/* pour le texte au début du formulaire*/
+.texte_formulaire2{
+    font-size: 22px;
+    color: #797672;
+    background-color: rgb(255, 255, 255); 
+} 
+
+/*taille et ajustement du bouton envoyer*/
+input[type="submit"]{
+    margin-left: 10px;
+    width: 200px;
+    height: 80px;
+}
